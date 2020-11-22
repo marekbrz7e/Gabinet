@@ -1,18 +1,24 @@
 <!DOCTYPE HTML>
 
 <html lang="pl-PL">
+    <?php   require_once "session.php";
+            $un=$_SESSION["username"];?>
     <head>
         <title>gabinet lekarski</title>
         <link rel="stylesheet" href="styl.css">
         <meta charset="UTF-8">
     </head>
     <body>
+        <div id="pasek">
+            <p id="napis">Zalogowano jako: <?php echo $un; ?></p>
+            <a href="logout.php" id="wyl">Wyloguj</a>
+        </div>
+
         <div id="main">
-            <a href="index.html" ><p id="banner">Gabinet lekarski</p></a>
+            <a href="index.html" id="banner">Gabinet lekarski</a>
             <div id="lewy2">
                
                <?php
-                    require_once "session.php";
                     $strDate=(string)date('Y-m-d');
                     $stop_date =(string)date('Y-m-d');
                     $stop_date=date('Y-m-d', strtotime($stop_date . ' +1 day'));

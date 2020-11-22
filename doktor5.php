@@ -7,10 +7,6 @@
         <meta charset="UTF-8">
     </head>
     <body>
-        <div id ="pasek">
-
-        123123123
-        </div>
         <div id="main">
             
             <a href="index.html" ><p id="banner">Gabinet lekarski</p></a>

@@ -8,6 +8,10 @@
     font-size: 40px;
     text-decoration: white;
     color: white;
+    margin: 0 auto;
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 #main
 {
@@ -278,6 +282,31 @@ p
 }
 #pasek
 {
-    background-color: #000;
-    height: 30px;
+    background-color: rgb(255, 255, 255);
+    height: 25px;
+    min-width: 100%;
+    text-align: right;
+}
+body
+{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+#wyl
+{
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+#napis
+{
+    text-align: left;
+    background-color: white;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    color: black;
 }
