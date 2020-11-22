@@ -12,7 +12,6 @@
             <div id="lewy2">
                
                <?php
-                    require_once "session.php";
                     $strDate=(string)date('Y-m-d');
                     $stop_date =(string)date('Y-m-d');
                     $stop_date=date('Y-m-d', strtotime($stop_date . ' +1 day'));
@@ -71,18 +70,14 @@
                 
             </div>
             <div id="prawy2">
-                <a href="doktor2.php" id="dod">USUŃ WIZYTĘ</a>
-                <br><br>
+                <a href="doktor.php" id="dod">DODAJ WIZYTĘ</a>
                 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                     <label>PESEL:</label> <br>
                     <input type="text" id="pesel" name="pesel"> <br>
                     <label>DATA:</label> <br>
-                    <input type="datetime-local" id="data" name="data"> <br>
-                    <label>UWAGI:</label> <br>
-                    <input type="text" id="UWAGI" name="uwagi"> <br><br><br>
-                    <input type="submit" id="send" value="dodaj wizytę">
+                    <input type="date" id="data" name="data"> <br>
+                    <input type="submit" id="send" value="usuń wizytę">
                 </form>
-                <a href="doktor3.php"><img src="pacjent2.png" id="dp"></a>
                 <?php
                 
                 
@@ -93,8 +88,6 @@
 
                     $pesel=$_POST["pesel"];
                     $data=$_POST["data"];
-                    $data[10]=' ';
-                    $uwagi=$_POST["uwagi"];
 
                     if(preg_match("(\b\d{11})",$pesel))
                     {
@@ -104,11 +97,11 @@
                         $r2=mysqli_fetch_row($result2);
                         if($count2!=0)
                         {
-                            $a="INSERT INTO `wizyty` (`id_pac`, `data`, `uwagi`) VALUES ($r2[0],'".$data."','".$uwagi."')";
+                            $a="DELETE FROM wizyty WHERE id_pac=".$r2[0]." AND data LIKE '".$data."%'";
                             echo $a."<br>";
                             if(mysqli_query($connect2,$a))
                             {
-                                echo "dodano rekord";
+                                echo "usunieto rekord";
                                 header("Refresh:0");
                             }
                             else

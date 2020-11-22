@@ -8,12 +8,12 @@
     </head>
     <body>
         <div id="main">
-            <p id="banner">Gabinet lekarski</p>
+            <a href="index.html" ><p id="banner">Gabinet lekarski</p></a>
             <div id="lewy2">
                
                <?php
                         
-                $connect=mysqli_connect("localhost","root","","gabinet lekarski");
+                $connect=mysqli_connect("localhost","root","","gabinet_lekarski");
                 mysqli_set_charset($connect,"utf8");
 
                 
@@ -68,7 +68,7 @@
             <div id="prawy2">
                 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                     <label>PESEL:</label> <br>
-                    <input type="text" id="pesel: " name="pesel"> <br> <br>
+                    <input type="text" id="pesel" name="pesel"> <br> <br>
                     <input type="submit" id="send" value="wyślij"> <br>
                 </form>
                 

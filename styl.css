@@ -53,7 +53,7 @@ img
     width: 60%;
     height: 50%;
     min-width: 100px;
-    min-height: 300px ;
+    min-height: 400px ;
     margin-left:100px;
 }
 
@@ -63,12 +63,21 @@ img
     float: left;
 }
 
-#pesel
+a
 {
-    background-color: rgb(255, 0, 0);
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+    padding: 3px;
 }
 
 #send
+{
+    color: white;
+    background-color: gray;
+}
+
+#find
 {
     color: white;
     background-color: gray;
@@ -82,6 +91,46 @@ table
     line-height: 24px;
     margin: 30px auto;
     text-align: left;
+}
+
+#dp
+{
+    width: 50px;
+    height: 30px;
+    margin-left: 100px;
+    margin-top: 75px;
+}
+
+#dp2
+{
+    width: 50px;
+    height: 45px;
+    margin-left: 100px;
+    margin-top: 25px;   
+}
+
+form
+{
+    margin-left: 10px;
+}
+
+#send
+{
+    margin-top: 10px;
+}
+
+#dod
+{
+    color: white;
+    background-color: gray;
+    margin-top: 3px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+    padding: 3px;
+    text-align: center;
+    min-width: 200px;
 }
 
 th {
@@ -161,4 +210,74 @@ tbody:hover td {
 tbody:hover tr:hover td {
     color: #444;
     text-shadow: 0 1px 0 #fff;
+}
+
+#pesel
+{
+    background-color: gray;
+}
+#imie
+{
+    background-color: gray;
+}
+#nazwisko
+{
+    background-color: gray;
+}
+#adres
+{
+    background-color: gray;
+}
+#data
+{
+    background-color: gray;
+}
+#UWAGI
+{
+    background-color: gray;
+}
+#telefon
+{
+    background-color: gray;
+}
+#pacjent
+{
+    font-size: 20px;
+}
+#administrator
+{
+    font-size: 20px;
+
+}
+p
+{
+    margin-left: 10px;
+}
+#lewy3
+{
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    color: white;
+}
+#username
+{
+    background-color: gray;
+}
+#password
+{
+    background-color: gray;
+}
+#cpassword
+{
+    background-color: gray;
+} 
+#zaloguj
+{
+    color: black;
+}
+#pasek
+{
+    background-color: #000;
+    height: 30px;
 }

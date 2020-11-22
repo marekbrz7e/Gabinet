@@ -7,12 +7,16 @@
         <meta charset="UTF-8">
     </head>
     <body>
+        <div id ="pasek">
+
+        123123123
+        </div>
         <div id="main">
+            
             <a href="index.html" ><p id="banner">Gabinet lekarski</p></a>
             <div id="lewy2">
                
                <?php
-                    require_once "session.php";
                     $strDate=(string)date('Y-m-d');
                     $stop_date =(string)date('Y-m-d');
                     $stop_date=date('Y-m-d', strtotime($stop_date . ' +1 day'));
