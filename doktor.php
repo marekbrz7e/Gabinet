@@ -10,7 +10,7 @@
     </head>
     <body>
         <div id="pasek">
-            <p id="napis">Zalogowano jako: <?php echo $un; ?></p>
+            <p id="napis">Zalogowano jako: <a href="changePwd.php"><?php echo $un; ?></a></p>
             <a href="logout.php" id="wyl">Wyloguj</a>
         </div>
 

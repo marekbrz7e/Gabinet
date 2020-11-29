@@ -1,12 +1,18 @@
 <!DOCTYPE HTML>
 
 <html lang="pl-PL">
+    <?php   require_once "session.php";
+            $un=$_SESSION["username"];?>
     <head>
         <title>gabinet lekarski</title>
         <link rel="stylesheet" href="styl.css">
         <meta charset="UTF-8">
     </head>
     <body>
+        <div id="pasek">
+            <p id="napis">Zalogowano jako: <a href="changePwd.php"><?php echo $un; ?></a></p>
+            <a href="logout.php" id="wyl">Wyloguj</a>
+        </div>
         <div id="main">
             <a href="index.html" ><p id="banner">Gabinet lekarski</p></a>
             <div id="lewy2">
