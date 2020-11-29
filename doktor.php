@@ -137,8 +137,6 @@
         <div id="stop">
             <p id="cr">© Medica2020</p>
         </div>
-        
-        
     </body>
 </html>
 
